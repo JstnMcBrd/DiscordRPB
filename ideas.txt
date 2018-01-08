@@ -1,0 +1,18 @@
+Medieval Theme
+Each person has their own character, called by discord username
+@ = you
+# = other characters
+& = npcs
+xp make levels, levels have skill points to be spent on skills
+all commands over dm
+ascii graphics
+real time
+separate battle mode
+have to login to bot, auto logged out if offline or idle
+settings for idle timeout logout
+other characters only appear if they are online
+wasd to move
+grid based world - sectionized
+no races or classes
+Global announcements for deaths and leveling up in DiscordRPB Server
+Admin players, cheats and buffs

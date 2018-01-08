@@ -1,0 +1,28 @@
+{
+	"commands": [
+		{
+			"name": "Help",
+			"description": "Prints out all the commands the bot accepts",
+			"adminOnly": false,
+			"complete": true,
+			"triggers": ["help", "commands", "cmds"],
+			"responses": ["help"]
+		},
+		{
+			"name": "Sign Up",
+			"description": "",
+			"adminOnly": false,
+			"complete": false,
+			"triggers": ["signup", "makecharacter", "start"],
+			"responses": ["signup"]
+		},
+		{
+			"name": "Reload External Files",
+			"description": "Reloads all external files where possible. Useful for developers wanting to add new data into the bot without restarting it.",
+			"adminOnly": true,
+			"complete": true,
+			"triggers": ["reloadfiles"],
+			"responses": ["reloadFiles"]	
+		}
+	]
+}
