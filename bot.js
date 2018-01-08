@@ -4,7 +4,6 @@ console.log("Importing External Libraries");
 const Discord = require("discord.js");
 const colors = require("colors");
 const fs = require("fs");
-const Map = require("./data/maps/map").Map;
 colors.setTheme({
 	system: ['cyan'],
 	info: ['green'],
@@ -20,7 +19,7 @@ var commandFunctions;
 var admin;
 var loadExternalFiles = function() {
 	console.log("Loading External Files".system);
-		auth = JSON.parse(fs.readFileSync("./data/auth.json"));
+		auth = JSON.parse(fs.readFileSync("./data/discord/auth.json"));
 		commandsList = JSON.parse(fs.readFileSync("./data/commands/commands.json"));
 		commandFunctions = require("./data/commands/commands.js");
 		admin = JSON.parse(fs.readFileSync("./data/admin.json"));
@@ -31,10 +30,6 @@ loadExternalFiles();
 
 console.log("Initializing Client".system);
 var client = new Discord.Client();
-
-var test = new Map("spawnland");
-
-console.log(test.getName());
 
 client.on("ready", () => {
 	console.log("Discord Connection Successful".system);
